@@ -1,0 +1,38 @@
+1. CLONE THE PROJECT
+
+    git clone https://github.com/eezis/hello-vue-django.git
+    cd hello-vue-django
+
+2.CREATE PYTHON ENVIRONMENT
+
+    # create a venv
+    mkvirtualenv --python=/usr/bin/python3 djangovue
+
+    # test for Python 3.X
+    python -V 
+
+    # install requirements
+    SKIP THESE NEXT TWO STEPS, make dev will do it and it will mess things up if you do this part.
+    #pip3 install -r requirements.txt
+    #pip3 install -r requirements-dev.txt
+
+    # UPDATE SECRET KEY IN backend/settings.pu
+    SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'VERY_SECRET_KEY_THAT_YOU_SHOULD_CHANGE')
+
+3. PROJECT IS SETUP TO USE SQLITE3, Change DB here if you want (can do later)
+
+
+4. CREATE THE CLIENTSIDE VUE STUFF
+
+    make dev
+    make migrate
+
+    #now make a superuser so that we can get to admin, etc
+    #python manage.py createsuperuser
+    # It IS MANAGE not MANAGE.PY?  Is that a typo?
+    python manage createsuperuser.py 
+
+    # start the server
+    make run
+
+5. 
