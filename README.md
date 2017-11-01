@@ -20,6 +20,8 @@ mkvirtualenv --python=/usr/bin/python3 [project_name]
 pip install --upgrade pip
 make dev
 make migrate
+# note that it is manage, not manage.py
+python manage createsuperuser
 make run
 ```
 
