@@ -21,6 +21,7 @@ Decide on a projectname
 git clone this repository
 rename the hello-vue-directory to your project_name
 cd project_name
+update the project name in the package.json
 mkvirtualenv --python=/usr/bin/python3 [project_name]
 pip install --upgrade pip
 make dev
