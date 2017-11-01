@@ -17,6 +17,7 @@ These steps will install all required dependencies including development ones, r
 
 ```bash
 mkvirtualenv --python=/usr/bin/python3 [project_name]
+pip install --upgrade pip
 make dev
 make migrate
 make run
