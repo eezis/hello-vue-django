@@ -32,10 +32,13 @@ make run
 ### now change the git repo
 
 ```bash
+
+create a new repo at git, use appropriate name 
+
 # list the current repo
 git remote -v
 # make a new repo
-git remote set-url origin https://github.com/eezis/[reponamehere]
+git remote set-url origin https://github.com/eezis/[repo_name_here]
 ```
 
 ### Deployment
