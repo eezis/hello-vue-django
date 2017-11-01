@@ -16,7 +16,7 @@ This is a boilerplate project for using vuejs with Django.
 These steps will install all required dependencies including development ones, run migrations and start dev server.
 
 ```bash
-mkvirtualenv [project_name]
+mkvirtualenv --python=/usr/bin/python3 [project_name]
 make dev
 make migrate
 make run
