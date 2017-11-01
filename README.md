@@ -15,7 +15,12 @@ This is a boilerplate project for using vuejs with Django.
 
 These steps will install all required dependencies including development ones, run migrations and start dev server.
 
+Decide on a projectname
+
 ```bash
+git clone this repository
+rename the hello-vue-directory to your project_name
+cd project_name
 mkvirtualenv --python=/usr/bin/python3 [project_name]
 pip install --upgrade pip
 make dev
@@ -23,6 +28,14 @@ make migrate
 # note that it is manage, not manage.py
 python manage createsuperuser
 make run
+```
+### now change the git repo
+
+```bash
+# list the current repo
+git remote -v
+# make a new repo
+git remote set-url origin https://github.com/eezis/[reponamehere]
 ```
 
 ### Deployment
